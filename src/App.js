@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import "./App.css";
+import CounterText from "./components/counter-text";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,7 +17,7 @@ function App() {
       <h1 className="header">카운터 x 2</h1>
       <div className="counter-wrapper">
         <button onClick={hanldeDecrement}>-1</button>
-        <p className="counter-text">{count}</p>
+        <CounterText />
         <button onClick={handleIncrement}>+1</button>
       </div>
     </div>

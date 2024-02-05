@@ -15,7 +15,7 @@ export default function Counter() {
   return (
     <div className="counter-wrapper">
       <button onClick={hanldeDecrement}>-1</button>
-      <CounterText />
+      <CounterText num={count} />
       <button onClick={handleIncrement}>+1</button>
     </div>
   );
